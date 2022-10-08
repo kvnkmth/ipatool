@@ -32,8 +32,13 @@ jobs:
         run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && cp ../ipatool . && sudo chmod +x ipatool
       - name: Run version
         run: cd ipatool-macos-v1.1.4/ && ./ipatool --version
-      - name: Run auth
-        run: cd ipatool-macos-v1.1.4/ && ./ipatool help auth login
+      #- name: Run auth
+       # run: cd ipatool-macos-v1.1.4/ && ./ipatool auth login -e alphabixi@gmail.com -p 
+      - name: Run DOWNLOAD
+        run: cd ipatool-macos-v1.1.4/ && ./ipatool search pnc limit 1 
+        env: 
+          IPATOOL_EMAIL: alphabixi@gmail.com
+          IPATOOL_PASSWORD: type#APPPLE1
      # - uses: actions/upload-artifact@v2
       #  with:
       #    name: ios14.8-iPhone106
