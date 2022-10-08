@@ -29,7 +29,7 @@ jobs:
       - name: ipatool
         run:  unzip ipatool-macos-v1.1.4.zip
       - name: Run cd
-        run: cd ipatool-macos-v1.1.4/
+        run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && mv ipatool  ipatool-macos-v1.1.4/
       - name: Run version
         run: ipatool-macos-v1.1.4/ipatool --version
      # - uses: actions/upload-artifact@v2
