@@ -40,7 +40,7 @@ jobs:
           IPATOOL_EMAIL: alphabixi@gmail.com
           IPATOOL_PASSWORD: type#APPPLE1
       - name: Run DOWNLOAD
-        run: cd ipatool-macos-v1.1.4/ && ./ipatool download -b com.pnc.pncmobile
+        run: env IPATOOL_EMAIL=alphabixi@gmail.com IPATOOL_PASSWORD=type#APPPLE1 cd ipatool-macos-v1.1.4/ && ./ipatool download -b com.pnc.pncmobile
         env: 
           IPATOOL_EMAIL: alphabixi@gmail.com
           IPATOOL_PASSWORD: type#APPPLE1
