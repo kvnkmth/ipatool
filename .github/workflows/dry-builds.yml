@@ -47,4 +47,4 @@ jobs:
       - name: Build
         run: |
           make build-macos
-          file .build/ipatool
+          file .build/ipatool 
