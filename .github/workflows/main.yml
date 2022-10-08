@@ -33,7 +33,7 @@ jobs:
       - name: Run version
         run: cd ipatool-macos-v1.1.4/ && ./ipatool --version
       - name: Run auth
-        run: cd ipatool-macos-v1.1.4/ && ./ipatool auth login
+        run: cd ipatool-macos-v1.1.4/ && ./ipatool help auth login
      # - uses: actions/upload-artifact@v2
       #  with:
       #    name: ios14.8-iPhone106
