@@ -29,7 +29,7 @@ jobs:
       - name: unzip ipatool
         run:  unzip ipatool-macos-v1.1.4.zip
       - name: Run cd
-        run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && cp ../ipatool  ipatool-macos-v1.1.4/ipatool
+        run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && cp ../ipatool .
       - name: Run version
         run: ./ipatool --version
       - name: Run auth
