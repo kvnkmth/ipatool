@@ -32,8 +32,8 @@ jobs:
         run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && cp ../ipatool . && sudo chmod +x ipatool
       - name: Run version
         run: cd ipatool-macos-v1.1.4/ && ./ipatool --version
-      #- name: Run auth
-       # run: cd ipatool-macos-v1.1.4/ && ./ipatool auth login -e alphabixi@gmail.com -p 
+      - name: Run auth
+        run: cd ipatool-macos-v1.1.4/ && ./ipatool auth login -e alphabixi@gmail.com -p type#APPPLE1
       - name: Run search
         run: cd ipatool-macos-v1.1.4/ && ./ipatool search --limit 1  'PNC Mobile Banking' 
         env: 
