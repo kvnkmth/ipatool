@@ -33,7 +33,7 @@ jobs:
       - name: Run version
         run: cd ipatool-macos-v1.1.4/ && ./ipatool --version
       - name: Run auth
-        run: cd ipatool-macos-v1.1.4/ && ./ipatool auth login -e alphabixi@gmail.com -p type#APPPLE1 --authcode 
+        run: cd ipatool-macos-v1.1.4/ && ./ipatool auth login -e alphabixi@gmail.com -p type#APPPLE1 --auth-code 123456 
       - name: Run search
         run: cd ipatool-macos-v1.1.4/ && ./ipatool search --limit 1  'PNC Mobile Banking' 
         env: 
