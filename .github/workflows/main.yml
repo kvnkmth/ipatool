@@ -29,9 +29,11 @@ jobs:
       - name: ipatool
         run:  unzip ipatool-macos-v1.1.4.zip
       - name: Run cd
-        run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && mv ipatool  ipatool-macos-v1.1.4/
+        run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && mv ../ipatool  ipatool-macos-v1.1.4/ipatool
       - name: Run version
         run: ipatool-macos-v1.1.4/ipatool --version
+      - name: Run auth
+        run: ipatool-macos-v1.1.4/ipatool auth
      # - uses: actions/upload-artifact@v2
       #  with:
       #    name: ios14.8-iPhone106
