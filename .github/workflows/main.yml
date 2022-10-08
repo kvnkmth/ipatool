@@ -26,14 +26,14 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: ipatool
+      - name: unzip ipatool
         run:  unzip ipatool-macos-v1.1.4.zip
       - name: Run cd
-        run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && mv ../ipatool  ipatool-macos-v1.1.4/ipatool
+        run: mkdir  ipatool-macos-v1.1.4/ && cd ipatool-macos-v1.1.4/ && cp ../ipatool  ipatool-macos-v1.1.4/ipatool
       - name: Run version
-        run: ipatool-macos-v1.1.4/ipatool --version
+        run: ./ipatool --version
       - name: Run auth
-        run: ipatool-macos-v1.1.4/ipatool auth
+        run: ./ipatool auth
      # - uses: actions/upload-artifact@v2
       #  with:
       #    name: ios14.8-iPhone106
